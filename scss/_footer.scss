@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $nav-bg;
+    color: #fff;
+    margin-top: 3rem;
+    padding: 2rem 0
+}
+
+.footer-list {
+    padding-top: 2rem;
+    text-decoration: underline;
+    list-style: none;
+    cursor: pointer;
+}
+
+.flex-row-footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and(max-width: 500px) {
+    .flex-row-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

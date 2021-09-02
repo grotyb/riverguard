@@ -1,0 +1,96 @@
+@import 'globalVar';
+@import 'rootStyle';
+@import 'nav';
+@import 'burgerNav';
+@import 'svgStyles';
+@import 'animations';
+@import 'hero';
+@import 'rider';
+@import 'footer';
+.nav-links {
+    color: #fff;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-accent;
+    width: 85vw;
+    color: #fff;
+    box-sizing: content-box;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 3.5em;
+    padding: 1rem 1rem 1rem 2rem;
+    margin-top: 5rem;
+    // max-height: 15v;
+}
+
+.text {
+    margin-top: 1.5rem;
+    max-width: 70ch;
+    font-family: arial, sans-serif;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.change.menu-btn__burger::after {
+    opacity: 0;
+}
+
+.change.menu-btn__burger::before {
+    transform: rotate(90deg);
+}
+
+@media screen and (min-width:750px) {
+    .card {
+        flex-direction: row;
+    }
+    .style-border {
+        display: none;
+    }
+    .text {
+        margin-top: 0;
+        margin-left: 0.7rem;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        background-color: $nav-bg;
+    }
+    .nav-links {
+        margin: 0 1em;
+    }
+    .main-nav {
+        font-size: 1rem;
+        display: flex !important;
+        width: auto;
+        margin-right: 1em;
+    }
+    .top-wrapper {
+        margin-right: auto;
+        display: inline;
+        width: auto;
+    }
+    .flex-item {
+        flex: 2;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+// .notransition {
+//     -webkit-transition: none !important;
+//     -moz-transition: none !important;
+//     -o-transition: none !important;
+//     transition: none !important;
+// }

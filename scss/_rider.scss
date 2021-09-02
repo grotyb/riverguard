@@ -1,0 +1,141 @@
+// .move {
+//     display: grid;
+//     place-items: center;
+//     margin-top: 2.5rem;
+// }
+// .center {
+//     place-items: center;
+// }
+// .rider {
+//     width: 50%;
+// }
+.move {
+    margin-top: 3rem;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+}
+
+.center-move {
+    background-color: $primary-accent;
+    width: 85vw;
+    display: flex;
+    border-radius: 3.5rem;
+}
+
+.rider {
+    z-index: -2;
+    width: 50vw;
+    height: auto;
+    position: relative;
+    left: -1rem;
+}
+
+#BackWheel {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: moveWheel 5s ease infinite;
+}
+
+#FrontWheel {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: moveWheel 5s ease infinite forwards;
+}
+
+@keyframes moveWheel {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// .qualities:before {
+//     content: "";
+//     position: absolute;
+//     top: 1.2em;
+//     left: -30px;
+//     margin-top: -.5em;
+//     background: #f69ec4;
+//     height: 12px;
+//     width: 12px;
+//     border-radius: 50%;
+// }
+// .qualities {
+//     position: relative;
+//     display: block;
+//     text-indent: 1.5rem;
+//     list-style-type: none;
+// }
+.content-move h1 {
+    margin-bottom: 0.5em;
+    // display: block;
+    // padding-right: 1em;
+    // text-align: center;
+}
+
+ul.qualities {
+    display: block;
+    margin-left: -10px;
+}
+
+.qualities li {
+    display: block;
+    position: relative;
+}
+
+.qualities li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.qualities li:before {
+    content: "";
+    position: absolute;
+    top: 1.2em;
+    left: -30px;
+    margin-top: -.5em;
+    background: #F57F17;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+
+.flex-row {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+// .flex-column {
+//     justify-content: center;
+//     align-items: center;
+// }
+.move .flex-column h1 {
+    text-align: center;
+    margin-top: 2rem;
+    border-bottom: 0.4rem #f57f17 solid;
+    border-radius: 0.2rem;
+    // width: 55%;
+}
+
+.content-move {
+    height: min-content;
+}
+
+.flex-row-move {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and(max-width:600px) {
+    .flex-row-move {
+        flex-direction: column;
+    }
+    .rider {
+        left: 0;
+    }
+}
