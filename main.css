@@ -205,7 +205,7 @@ svg {
 }
 
 .illustration {
-  margin-top: calc(5rem + 3vh);
+  margin-top: calc(3rem - 6vh);
   width: 23vh;
   height: 23vh;
   background-color: #000A2E;
@@ -220,8 +220,19 @@ svg {
 }
 
 .hero-text {
-  margin-top: 3vh;
+  margin-top: 12vh;
   color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-text {
+    margin-top: 15vh;
+  }
+
+  .illustration {
+    margin-top: calc(2rem - 5vh);
+    margin-bottom: 10px;
+  }
 }
 
 .hero-section p {
