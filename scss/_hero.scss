@@ -1,7 +1,7 @@
 .hero-section {
     background-color: $primary-accent;
     // padding: 4rem 0rem;
-    height: 48vh;
+    height: 50vh;
     // padding-top: 3rem;
     // height: 30vh;
     display: flex;
@@ -11,9 +11,9 @@
 }
 
 .illustration {
-    margin-top: calc(5rem + 3vh);
-    width: 23vh;
-    height: 23vh;
+    // margin-top: calc(5rem + 3vh);
+    width: 20vh;
+    height: 20vh;
     background-color: $nav-bg;
     border-radius: 50%;
     display: grid;
@@ -26,11 +26,11 @@
 
 .hero-text {
     margin-top: 15vh;
-    color: #fff;
+    color: $bg-primary;
 }
 
 .hero-section p {
-    color: #fff;
+    color: $bg-primary;
     text-align: center;
     margin-top: 1vh;
 }
@@ -45,5 +45,5 @@
     flex: 1;
     box-sizing: content-box;
     padding: 0.5rem 0;
-    color: #fff;
+    color: $bg-primary;
 }

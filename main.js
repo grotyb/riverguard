@@ -69,3 +69,12 @@ $(document).ready(function() {
 
     // console.log();
 });
+
+
+const anim = gsap.fromTo('.card-river', {autoAlpha: 0, x: 0}, {duration: 1, autoAlpha: 1, x: window.innerWidth*0.65});
+ScrollTrigger.create({
+  trigger: ".card-river",
+  animation: anim,
+  toggleActions: 'play none none none',
+  once: true,
+});
