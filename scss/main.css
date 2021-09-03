@@ -10,6 +10,7 @@
 
 body {
   background-color: #ededed;
+  color: #3b3d3f;
 }
 
 .top-wrapper {
@@ -25,14 +26,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #000A2E;
+  background-color: #4ED9A0;
   padding: 1rem 0;
   font-weight: bold;
 }
 
 .navbar {
   z-index: 10;
-  background-color: #000A2E;
+  background-color: #4ED9A0;
   position: fixed;
   padding: 0;
   margin: 0;
@@ -71,7 +72,7 @@ body {
   color: #ededed;
   display: none;
   list-style: none;
-  background-color: #000A2E;
+  background-color: #4ED9A0;
   width: 100%;
   text-align: center;
   font-size: 1.3rem !important;
@@ -82,8 +83,8 @@ body {
           box-sizing: content-box;
   padding: 0.5rem 1.2rem;
   border-radius: 0.5rem;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #000), color-stop(50%, #0031E0));
-  background: linear-gradient(to left, #000 50%, #0031E0 50%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #4ED9A0), color-stop(50%, #A4F062));
+  background: linear-gradient(to left, #4ED9A0 50%, #A4F062 50%);
   background-size: 200%;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -93,9 +94,9 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-position: right;
-  border: 0.2rem #0031E0 solid;
+  border: 0.2rem #A4F062 solid;
   padding: 0.3rem 0.9rem;
-  color: white;
+  color: #818283;
 }
 
 .nav-links:hover {
@@ -108,7 +109,7 @@ li:last-child {
 
 .style-border {
   /* width: 0.3rem; */
-  background: #0031E0;
+  background: #A4F062;
   padding: 0.2em;
   margin-inline: 5rem;
   margin-top: 1rem;
@@ -208,7 +209,7 @@ svg {
 .illustration {
   width: 20vh;
   height: 20vh;
-  background-color: #000A2E;
+  background-color: #4ED9A0;
   border-radius: 50%;
   display: -ms-grid;
   display: grid;
@@ -222,7 +223,7 @@ svg {
 .hero-text {
   margin-top: 25vh;
   margin-bottom: 2rem;
-  color: #6C7A89;
+  color: #818283;
   font-size: 4rem;
   font-weight: 900;
   font-family: 'Roboto', sans-serif;
@@ -254,7 +255,7 @@ svg {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding: 0.5rem 0;
-  color: #6C7A89;
+  color: #818283;
 }
 
 @media only screen and (max-width: 700px) {
@@ -278,7 +279,7 @@ svg {
 }
 
 .center-move {
-  background-color: #0031E0;
+  background-color: #A4F062;
   width: 85vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,7 +420,7 @@ ul.qualities {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #000A2E;
+  background-color: #4ED9A0;
   color: #ededed;
   margin-top: 3rem;
   padding: 2rem 0;
@@ -457,7 +458,9 @@ ul.qualities {
 }
 
 .nav-links {
-  color: #ededed;
+  color: #818283;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .center {
@@ -481,7 +484,7 @@ ul.qualities {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #0031E0;
+  background-color: #A4F062;
   width: 85vw;
   color: #fff;
   -webkit-box-sizing: content-box;
@@ -494,6 +497,7 @@ ul.qualities {
 }
 
 .card-river {
+  opacity: 0;
   height: 30vw;
   width: 30vw;
   border-width: 0.5rem;
@@ -549,7 +553,7 @@ ul.qualities {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    background-color: #000A2E;
+    background-color: #4ED9A0;
   }
   .nav-links {
     margin: 0 1em;
@@ -584,5 +588,52 @@ ul.qualities {
 
 .content {
   margin-top: auto;
+}
+
+.text-river {
+  color: #818283;
+  margin-top: auto;
+  margin-bottom: auto;
+  opacity: 0;
+  width: 50%;
+  left: 0;
+  height: 30vw;
+  overflow: scroll;
+}
+
+.align-start {
+  text-align: left !important;
+  font-size: 1.3rem;
+  text-indent: 2.5rem;
+  color: #818283 !important;
+}
+
+.fit-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.fimage {
+  height: 100%;
+  position: relative;
+  background: url("../images/river-image-card.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.center-text {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.center-horizontally {
+  margin: 0 auto !important;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 /*# sourceMappingURL=main.css.map */

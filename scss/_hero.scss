@@ -29,7 +29,7 @@
 .hero-text {
     margin-top: 25vh;
     margin-bottom: 2rem;
-    color: #6C7A89;
+    color: $text-color;
     font-size: 4rem;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
@@ -55,7 +55,7 @@
     flex: 1;
     box-sizing: content-box;
     padding: 0.5rem 0;
-    color: #6C7A89;
+    color: $text-color;
 }
 @media only screen and (max-width: 700px){
     .hero-text{

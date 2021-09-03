@@ -119,12 +119,32 @@ $(document).ready(function() {
             }
         }
     }
-
+    gsap.from(".card-river", {
+        alpha:0
+    })
     gsap.to(".card-river", { 
         x: window.innerWidth*0.65,
+        alpha:1,
         duration:2,
+        delay:0.75,
         scrollTrigger: {
           trigger: ".card-river",
+          scrub: false,
+          toggleActions: "play none none none",
+        }
+      })
+      gsap.from(".text-river", {
+          alpha:0,
+          x:-window.innerWidth*0.75,
+        //   y: -100
+      })
+      gsap.to(".text-river", { 
+        x: -window.innerWidth*0.220,
+        alpha:1,
+        duration:2.5,
+        delay:1,
+        scrollTrigger: {
+          trigger: ".text-river",
           scrub: false,
           toggleActions: "play none none none",
         }

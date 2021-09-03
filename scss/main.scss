@@ -8,7 +8,9 @@
 @import 'rider';
 @import 'footer';
 .nav-links {
-    color: $bg-primary;
+    color: $text-color;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
 .center {
@@ -35,6 +37,7 @@
 }
 
 .card-river{
+    opacity: 0;
     height: 30vw;
     width: 30vw;
     border-width: 0.5rem;
@@ -114,4 +117,50 @@
 
 .content{
     margin-top:auto
+}
+
+.text-river{
+    color: $text-color;
+    margin-top: auto;
+    margin-bottom: auto;
+    opacity: 0;
+    width: 50%;
+    left:0;
+    height: 30vw;
+    overflow: scroll;
+}
+
+.align-start{
+    text-align: left !important;
+    font-size: 1.3rem;
+    text-indent: 2.5rem;
+    color: $text-color !important;  
+}
+
+.fit-image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fimage{
+    height: 100%;
+    position:relative;
+    background:   url("../images/river-image-card.svg")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.center-text{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.center-horizontally{
+    margin:0 auto !important;
+}
+
+.grid{
+    display: grid;
+    place-items: center;
 }
