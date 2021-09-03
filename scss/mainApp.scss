@@ -1,0 +1,128 @@
+
+.black-bg {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+
+#nav {
+    // height: 6rem;
+    top: 0px !important;
+}
+
+.hero-video {
+    // margin-top: 6rem;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1000ms ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header-video {
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    z-index: 5;
+    position: absolute;
+}
+
+.hero-text-video {
+    color: $bg-primary;
+    z-index: 10;
+    display: block;
+    font-weight: 1200;
+    animation: fadeIn 1000ms ease-in forwards;
+}
+
+.hero-text-video h1 {
+    font-size: 3rem;
+    padding-bottom: 0.1em;
+    text-align: center;
+}
+
+.hero-text-video h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.box {
+    margin-top: 150vh;
+}
+@import 'globalVar';
+.black-bg {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+
+#nav {
+    // height: 6rem;
+    top: 0px !important;
+}
+
+.hero-video {
+    // margin-top: 6rem;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1000ms ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header-video {
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    z-index: 5;
+    position: absolute;
+}
+
+.hero-text-video {
+    color: $bg-primary;
+    z-index: 10;
+    display: block;
+    font-weight: 1200;
+    animation: fadeIn 1000ms ease-in forwards;
+}
+
+.hero-text-video h1 {
+    font-size: 3rem;
+    padding-bottom: 0.1em;
+    text-align: center;
+}
+
+.hero-text-video h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.box {
+    margin-top: 150vh;
+}

@@ -1,0 +1,32 @@
+.wrapper-menu {
+    width: auto;
+    height: auto;
+}
+
+.bar {
+    background-color: $bg-primary;
+    width: 2rem;
+    height: 0.3rem;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.bar1 {
+    transform: translateY(-4px);
+}
+
+.bar3 {
+    transform: translateY(4px);
+}
+
+.rotate .bar1 {
+    transform: translateY(4px) rotate(45deg);
+}
+
+.rotate .bar3 {
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+.rotate .bar2 {
+    opacity: 0;
+}

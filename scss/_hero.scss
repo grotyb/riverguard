@@ -1,0 +1,70 @@
+.hero-section {
+    // background-color: $primary-accent;
+    background: url('../images/river.svg') no-repeat center fixed;     
+    background-size: cover;
+    // padding: 4rem 0rem;
+    height: 100vh;
+    // padding-top: 3rem;
+    // height: 30vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+}
+
+.illustration {
+    // margin-top: calc(5rem + 3vh);
+    width: 20vh;
+    height: 20vh;
+    background-color: $nav-bg;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.code_illustration {
+    width: 20vh;
+}
+
+.hero-text {
+    margin-top: 25vh;
+    margin-bottom: 2rem;
+    color: $text-color;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-section p {
+    color: $bg-primary;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.contact-hero {
+    display: flex;
+    width: 50%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 2.5rem !important;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.contact {
+    flex: 1;
+    box-sizing: content-box;
+    padding: 0.5rem 0;
+    color: $text-color;
+}
+@media only screen and (max-width: 700px){
+    .hero-text{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .hero-text{
+        font-size: 2rem;
+    }
+}
