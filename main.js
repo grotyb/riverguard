@@ -1,4 +1,7 @@
+var controller = new ScrollMagic.Controller();
 $(document).ready(function() {
+
+    gsap.registerPlugin(ScrollTrigger);
     /* code here */
     var nav = document.getElementById('nav');
     var navList = document.getElementById('js-menu');
@@ -67,14 +70,80 @@ $(document).ready(function() {
         }
     }
 
+
     // console.log();
+
+    // $(".card-river").each(function(i) {
+    //     let thisCard = $(this);
+        
+        
+    //     var action = gsap.timeline()
+    //     .from(thisCard,{duration:1, x:'-100%', ease:"back.out(2)"})
+    //     .set(thisCard,{color:'darkgreen'},'-=0.2')
+        
+          
+         
+    //     new ScrollMagic.Scene({
+    //       triggerElement: this,
+    //       duration: 0,
+    //       triggerHook: 0.8
+    //     })
+    //       .setTween(action)
+    //       //.addIndicators()
+    //       .addTo(controller)
+    //   });
+    // gsap.to(".card-river", {
+    //     ScrollTrigger: ".card-river",
+    //     x: window.innerWidth*0.65,
+    // })
+    if (window.innerWidth < 600){
+        var elements = document.getElementsByClassName("fab")
+        for(let i = 0; i < elements.length; i++){
+            elements[i].classList.remove("fa-3x")
+            elements[i].classList.add("fa-2x")
+        }
+    }
+    window.onresize = function(){
+        if (window.innerWidth < 600){
+            var elements = document.getElementsByClassName("fab")
+            for(let i = 0; i < elements.length; i++){
+                elements[i].classList.remove("fa-3x")
+                elements[i].classList.add("fa-2x")
+            }
+        }
+        if (window.innerWidth > 600){
+            var elements = document.getElementsByClassName("fab")
+            for(let i = 0; i < elements.length; i++){
+                elements[i].classList.add("fa-3x")
+                elements[i].classList.remove("fa-2x")
+            }
+        }
+    }
+
+    gsap.to(".card-river", { 
+        x: window.innerWidth*0.65,
+        duration:2,
+        scrollTrigger: {
+          trigger: ".card-river",
+          scrub: false,
+          toggleActions: "play none none none",
+        }
+      })
 });
 
 
-const anim = gsap.fromTo('.card-river', {autoAlpha: 0, x: 0}, {duration: 1, autoAlpha: 1, x: window.innerWidth*0.65});
-ScrollTrigger.create({
-  trigger: ".card-river",
-  animation: anim,
-  toggleActions: 'play none none none',
-  once: true,
-});
+
+// const anim = gsap.fromTo('.card-river', {autoAlpha: 0, x: 0}, {duration: 1, autoAlpha: 1, x: window.innerWidth*0.65});
+// ScrollTrigger.create({
+//     trigger: ".card-river",
+//     animation: anim,
+//     toggleActions: 'play none none none',
+//     once: true,
+// });
+
+
+// gsap.to(".card-river", {
+//     scrollTrigger: ".box", // start the animation when ".box" enters the viewport (once)
+//     x: window.innerWidth*0.65
+// });
+

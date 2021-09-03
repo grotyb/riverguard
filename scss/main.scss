@@ -35,15 +35,17 @@
 }
 
 .card-river{
-    height: 30vh;
-    width: 30vh;
+    height: 30vw;
+    width: 30vw;
     border-width: 0.5rem;
     border-style: solid;
     border-color: #fff;
     border-radius: 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.spacer{
+    height: 1000vh;
+}
 .text {
     margin-top: 1.5rem;
     max-width: 70ch;
@@ -99,6 +101,7 @@
 }
 
 .flex-row{
+    margin-top: 60vh;
     width: 100vw;
 }
 
@@ -108,3 +111,7 @@
 //     -o-transition: none !important;
 //     transition: none !important;
 // }
+
+.content{
+    margin-top:auto
+}
