@@ -498,7 +498,7 @@ ul.qualities {
 
 .card-river {
   opacity: 0;
-  height: 30vw;
+  height: 30vw !important;
   width: 30vw;
   border-width: 0.5rem;
   border-style: solid;
@@ -582,12 +582,14 @@ ul.qualities {
 }
 
 .flex-row {
-  margin-top: 60vh;
+  margin-bottom: 5vh;
+  margin-top: 10vh;
   width: 100vw;
 }
 
 .content {
   margin-top: auto;
+  margin-bottom: auto;
 }
 
 .text-river {
@@ -636,4 +638,45 @@ ul.qualities {
   display: grid;
   place-items: center;
 }
+
+@media screen and (max-width: 600px) {
+  .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-river {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    height: 70vw !important;
+  }
+  .text-river {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    height: 70vw;
+    text-indent: 0 !important;
+  }
+  .align-start {
+    text-indent: 0;
+    font-size: 1rem;
+  }
+  .center-text {
+    font-size: 1.5rem;
+  }
+}
+
+.fab {
+  margin-right: 1rem;
+}
 /*# sourceMappingURL=main.css.map */
+
+.simage {
+  height: 100%;
+  position: relative;
+  background: url("../images/river-image-card-2.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}

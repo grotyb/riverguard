@@ -96,19 +96,27 @@ $(document).ready(function() {
     //     ScrollTrigger: ".card-river",
     //     x: window.innerWidth*0.65,
     // })
-    if (window.innerWidth < 600){
+    if (window.innerWidth > 450){
+        var elements = document.getElementsByClassName("fab")
+        for(let i = 0; i < elements.length; i++){
+            // elements[i].style.marginRight = "1rem"
+        }
+    }
+    if (window.innerWidth < 350){
         var elements = document.getElementsByClassName("fab")
         for(let i = 0; i < elements.length; i++){
             elements[i].classList.remove("fa-3x")
             elements[i].classList.add("fa-2x")
+            // elements[i].style.marginRight = "1rem"
         }
     }
     window.onresize = function(){
-        if (window.innerWidth < 600){
+        if (window.innerWidth < 350){
             var elements = document.getElementsByClassName("fab")
             for(let i = 0; i < elements.length; i++){
                 elements[i].classList.remove("fa-3x")
                 elements[i].classList.add("fa-2x")
+                // elements[i].style.marginRight = "1rem"
             }
         }
         if (window.innerWidth > 600){
@@ -116,39 +124,134 @@ $(document).ready(function() {
             for(let i = 0; i < elements.length; i++){
                 elements[i].classList.add("fa-3x")
                 elements[i].classList.remove("fa-2x")
+                // elements[i].style.marginRight = "1rem"
             }
         }
     }
-    gsap.from(".card-river", {
-        alpha:0
-    })
-    gsap.to(".card-river", { 
-        x: window.innerWidth*0.65,
-        alpha:1,
-        duration:2,
-        delay:0.75,
-        scrollTrigger: {
-          trigger: ".card-river",
-          scrub: false,
-          toggleActions: "play none none none",
-        }
-      })
-      gsap.from(".text-river", {
-          alpha:0,
-          x:-window.innerWidth*0.75,
-        //   y: -100
-      })
-      gsap.to(".text-river", { 
-        x: -window.innerWidth*0.220,
-        alpha:1,
-        duration:2.5,
-        delay:1,
-        scrollTrigger: {
-          trigger: ".text-river",
-          scrub: false,
-          toggleActions: "play none none none",
-        }
-      })
+    if(window.innerWidth>600){
+        gsap.from("#animate-right", {
+            alpha:0
+        })
+        gsap.to("#animate-right", { 
+            x: window.innerWidth*0.65,
+            alpha:1,
+            duration:2,
+            delay:0.75,
+            scrollTrigger: {
+              trigger: "#animate-right",
+              scrub: false,
+              toggleActions: "play none none none",
+            }
+          })
+        gsap.from("#animate-left", {
+            alpha:0
+        })
+        gsap.to("#animate-left", { 
+            x: -window.innerWidth*0.45,
+            alpha:1,
+            duration:2,
+            delay:0.75,
+            scrollTrigger: {
+              trigger: "#animate-left",
+              scrub: false,
+              toggleActions: "play none none none",
+            }
+          })
+          gsap.from("#animate-right-text", {
+            alpha:0,
+            x:-window.innerWidth*0.75,
+          //   y: -100
+        })
+        gsap.to("#animate-right-text", { 
+          x: -window.innerWidth*0.220,
+          alpha:1,
+          duration:2.5,
+          delay:1,
+          scrollTrigger: {
+            trigger: "#animate-right-text",
+            scrub: false,
+            toggleActions: "play none none none",
+          }
+        })
+        gsap.from("#animate-left-text", {
+            alpha:0,
+            x:window.innerWidth*1.75,
+          //   y: -100
+        })
+        gsap.to("#animate-left-text", { 
+          x: window.innerWidth*0.40,
+          alpha:1,
+          duration:2.5,
+          delay:1,
+          scrollTrigger: {
+            trigger: "#animate-left-text",
+            scrub: false,
+            toggleActions: "play none none none",
+          }
+        })
+    }else{
+        gsap.from("#animate-left", {
+            alpha:0,
+            x:-window.innerWidth*0.75
+        });
+        gsap.to("#animate-left", {
+            alpha:1,
+            x:0,
+            duration:2.5, 
+            scrollTrigger: {
+                trigger: "#animate-left",
+                scrub: false,
+                toggleActions: "play none none none",
+              }
+        });
+        gsap.from("#animate-right", {
+            alpha:0,
+            x:-window.innerWidth*0.75
+        });
+        gsap.to("#animate-right", {
+            alpha:1,
+            x:0,
+            duration:2.5, 
+            scrollTrigger: {
+                trigger: "#animate-right",
+                scrub: false,
+                toggleActions: "play none none none",
+              }
+        });
+        gsap.from("#animate-right-text", {
+            alpha:0,
+            x:-window.innerWidth
+          //   y: -100
+        })
+        gsap.to("#animate-right-text", { 
+          x: 0,
+          alpha:1,
+          duration:2.5,
+          delay:1,
+          scrollTrigger: {
+            trigger: "#animate-right-text",
+            scrub: false,
+            toggleActions: "play none none none",
+          }
+        })
+        gsap.from("#animate-left-text", {
+            alpha:0,
+            x:-window.innerWidth
+          //   y: -100
+        })
+        gsap.to("#animate-left-text", { 
+          x: 0,
+          alpha:1,
+          duration:2.5,
+          delay:1,
+          scrollTrigger: {
+            trigger: "#animate-left-text",
+            scrub: false,
+            toggleActions: "play none none none",
+          }
+        })
+    }
+
 });
 
 
