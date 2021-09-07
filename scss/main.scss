@@ -197,4 +197,12 @@
 }
 .fab{
     margin-right: 1rem;
+    fill: #fff !important;
+}
+.simage{
+    height: 100%;
+    position:relative;
+    background:   url("../images/river-image-card-2.svg")no-repeat;
+    background-size: cover;
+    background-position: center;
 }

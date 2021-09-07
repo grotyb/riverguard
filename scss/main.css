@@ -255,7 +255,7 @@ svg {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding: 0.5rem 0;
-  color: #818283;
+  color: #fff;
 }
 
 @media only screen and (max-width: 700px) {
@@ -650,7 +650,7 @@ ul.qualities {
     margin-left: auto;
     margin-right: auto;
     width: 70vw;
-    height: 70vw !important;
+    height: 70vw;
   }
   .text-river {
     margin-left: auto;
@@ -670,8 +670,8 @@ ul.qualities {
 
 .fab {
   margin-right: 1rem;
+  fill: #fff !important;
 }
-/*# sourceMappingURL=main.css.map */
 
 .simage {
   height: 100%;
@@ -680,3 +680,4 @@ ul.qualities {
   background-size: cover;
   background-position: center;
 }
+/*# sourceMappingURL=main.css.map */
